@@ -14,7 +14,7 @@
 
 <h1>Add a game to the catalog</h1>
 
-<p class="middle"><a href="inventory_update.php">View full inventory</a></p>
+<p class="middle"><a href="inventory_list.php">View full inventory</a></p>
 
 <div id="games">
 
@@ -39,9 +39,11 @@
     <label for="quantity">Quantity </label>
 	<input type="number" name="quantity" id="quantity" max="999" required>
 
-    <label for="price">Unit Price </label>
+    <label for="price">Price Paid</label>
 	<input type="number" name="price" id="price" max="99.99" step="0.01" required>
-    <!-- step="0.01" (above) allows decimal to be entered -->
+
+  <label for="customer">Customer Initials/label>
+<input type="text" name="customer" id="customer" required>
 
 	<input type="submit" id="submit" value="Submit">
 </form>

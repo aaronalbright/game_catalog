@@ -4,16 +4,18 @@
 
 if (isset($_POST['game']) && isset($_POST['console'])) {
 
+    $customer = sanitizeMySQL($conn, $_POST['customer']);
     $game = sanitizeMySQL($conn, $_POST['game']);
     $console = sanitizeMySQL($conn, $_POST['console']);
     $price = sanitizeMySQL($conn, $_POST['price']);
     $quantity = sanitizeMySQL($conn, $_POST['quantity']);
 
-    $query = "INSERT INTO game_catalog (game, console, price, quantity) VALUES (?, ?, ?, ?)";
+    $query = "INSERT INTO game_catalog (customer_initials, game, console, price, quantity) VALUES (?, ?, ?, ?, ?)";
 
     if ( $stmt = mysqli_prepare($conn, $query) ) {
 
-        mysqli_stmt_bind_param($stmt, 'ssdi',
+        mysqli_stmt_bind_param($stmt, 'sssdi',
+        $customer,
         $game,
         $console,
         $price,
