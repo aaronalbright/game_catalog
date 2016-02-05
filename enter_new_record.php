@@ -12,7 +12,7 @@
 <body>
 <div id="container">
 
-<h1>Add a game to the catalog </h1>
+<h1>Add a game to the catalog</h1>
 
 <p class="middle"><a href="inventory_update.php">View full inventory</a></p>
 
