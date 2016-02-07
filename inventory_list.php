@@ -20,12 +20,13 @@
 
 <h2>Used Game Inventory</h2>
 
-<table class="table-striped">
+<table class="table table-striped">
     <tr>
         <th>Game</th>
         <th>Console</th>
         <th>Quantity</th>
         <th>Price</th>
+				<th>Customer</th>
     </tr>
 <!-- begin PHP while-loop to display database query results
      with each row enclosed in LI tags -->
@@ -36,15 +37,15 @@
     <td><?php echo $row['console']; ?></td>
     <td><?php echo $row['quantity']; ?></td>
     <td><?php echo $row['price']; ?></td>
+		<td><?php echo $row['customer_initials']; ?></td>
 </tr>
 
 <?php endwhile;  ?>
-<!-- end the PHP while-loop
-     everything else on this page is normal HTML -->
-
+<!-- end the PHP while-loop -->
 </table>
 
-<p class="middle"><a href="enter_new_record.php">Add games</a>: Open the used game entry form.</p>
+<a class="btn btn-lg btn-primary" href="enter_new_game.php">Add a game</a>
+<a class="btn btn-lg btn-default" href="index.html">Home</a>
 		</section>
 	</div>
 </div> <!-- close container -->

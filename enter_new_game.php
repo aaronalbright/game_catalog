@@ -13,11 +13,11 @@
 <div class="container">
   <div class="row">
   <div class="col-xs-12">
-<h1>GamesGalor</h2>
+<h1>GamesGalor Inc.</h2>
 
 <h3>Add a game to the catalog</h3>
 
-<p class="middle"><a href="inventory_list.php">View full inventory</a></p>
+<p class="middle"><a href="inventory_list.php">Check inventory</a></p>
   </div>
 
 <div class="col-xs-12">
@@ -32,7 +32,7 @@
 
     <div class="form-group">
     <label for="console">Console </label>
-    <select name="console" id="console" required>
+    <select class="form-control" name="console" id="console" required>
         <option value=""></option>
         <option value="PS3">Playstation 3</option>
         <option value="PS4">Playstation 4</option>
@@ -67,8 +67,8 @@
 </div>
 
 <div id="success">
-    <p class="announce">Thank you! Your order has been received..</p>
-    <p class="middle"><a href="enter_new_record.php">Return to the form</a></p>
+    <h2>Way to go! You did your job.</h2>
+    <a class="btn btn-default" href="enter_new_game.php">Do it again.</a>
 </div>
 
 </div>
