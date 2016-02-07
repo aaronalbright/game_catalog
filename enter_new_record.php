@@ -42,7 +42,7 @@
     <label for="price">Price Paid</label>
 	<input type="number" name="price" id="price" max="99.99" step="0.01" required>
 
-  <label for="customer">Customer Initials/label>
+  <label for="customer">Customer Initials</label>
 <input type="text" name="customer" id="customer" required>
 
 	<input type="submit" id="submit" value="Submit">
