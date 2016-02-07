@@ -4,26 +4,33 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title> Enter New Game </title>
-    <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
     <script src="js/enter.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-<div id="container">
+<div class="container">
+  <div class="row">
+  <div class="col-xs-12">
+<h1>GamesGalor</h2>
 
-<h1>Add a game to the catalog</h1>
+<h3>Add a game to the catalog</h3>
 
 <p class="middle"><a href="inventory_list.php">View full inventory</a></p>
+  </div>
 
+<div class="col-xs-12">
 <div id="games">
 
 <form id="gameform" method="post" autocomplete="off">
-<!-- autocomplete="off" ensures form will be empty if user clicks
-     the browser's Back button -->
-    <label for="game">Game Title </label>
-	<input type="text" name="game" id="game" required>
 
+    <div class="form-group">
+    <label for="game">Game Title </label>
+	<input class="form-control" type="text" name="game" id="game" required>
+    </div>
+
+    <div class="form-group">
     <label for="console">Console </label>
     <select name="console" id="console" required>
         <option value=""></option>
@@ -35,18 +42,27 @@
         <option value="WiiU">Nintendo Wii U</option>
         <option value="PC">PC</option>
     </select>
+  </div>
 
+<div class="form-group">
     <label for="quantity">Quantity </label>
-	<input type="number" name="quantity" id="quantity" max="999" required>
+	<input class="form-control" type="number" name="quantity" id="quantity" max="999" required>
+</div>
 
+<div class="form-group">
     <label for="price">Price Paid</label>
-	<input type="number" name="price" id="price" max="99.99" step="0.01" required>
+	<input class="form-control" type="number" name="price" id="price" max="99.99" step="0.01" required>
+</div>
 
+<div class="form-group">
   <label for="customer">Customer Initials</label>
-<input type="text" name="customer" id="customer" required>
+<input class="form-control" type="text" name="customer" id="customer" required>
+</div>
 
-	<input type="submit" id="submit" value="Submit">
+<div class="form-group">
+	<input class="btn btn-success" type="submit" id="submit" value="Submit">
 </form>
+</div>
 
 </div>
 
@@ -55,6 +71,8 @@
     <p class="middle"><a href="enter_new_record.php">Return to the form</a></p>
 </div>
 
+</div>
 </div> <!-- close container -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

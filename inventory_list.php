@@ -8,18 +8,19 @@
 <head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title> Games Galor Inventory </title>
+    <title>Games Galor Inc. Inventory</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/table.css">
 </head>
 
 <body>
-<div id="container">
+<div class="container">
+	<div class="row">
+		<section class="col-md-12">
+<h1>GamesGalor Inc.</h1>
 
-<h1>Used Game Catalog</h1>
+<h2>Used Game Inventory</h2>
 
-<table>
+<table class="table-striped">
     <tr>
         <th>Game</th>
         <th>Console</th>
@@ -44,7 +45,9 @@
 </table>
 
 <p class="middle"><a href="enter_new_record.php">Add games</a>: Open the used game entry form.</p>
-
+		</section>
+	</div>
 </div> <!-- close container -->
 </body>
+<script src="js/bootstrap.min.js"></script>
 </html>
